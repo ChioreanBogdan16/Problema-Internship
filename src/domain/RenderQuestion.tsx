@@ -42,7 +42,7 @@ export const RenderQuestion = ({ question, onAnswer }: Props) => {
 
   return (
     <>
-      <div> {question.correctAnswer}</div>
+  
       <div>Question: {question.text}</div>
   
       <form onSubmit={handleSubmit}>
