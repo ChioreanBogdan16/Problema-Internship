@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { RenderQuestion } from "./RenderQuestion";
 
-interface QuestionProps {
+interface QuestionProps { //se declara proprietatile parametrilor 
   questionNumber: number;
-  onAnswer: (count: number) => void;
+  onAnswer: (count: number) => void;//
 }
 /* Randomize array using Durstenfeld shuffle algorithm */
 function shuffleArray(array: string[]) {
@@ -34,8 +34,8 @@ export const Question = ({ onAnswer, questionNumber }: QuestionProps) => {
 
 
   return (
-    question.text ?
+  
       <RenderQuestion question={question} onAnswer={onAnswer} />
-      : null
+    
   );
 }

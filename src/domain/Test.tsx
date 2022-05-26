@@ -5,13 +5,13 @@ export const Test = () => {
     const [questionNumber, setQuestionNumber] = useState(0);
     const [count, setCount] = useState(0);
     const [countCorrect, setCountCorrect] = useState(0);
-    const handleAnswer = (receivedCount: number) => {
+    const handleAnswer = (receivedAnswer: number) => {
         setQuestionNumber(questionNumber + 1);
-        setCount(count + receivedCount)
-        if (receivedCount > 0) {
+        setCount(count + receivedAnswer)
+        if (receivedAnswer > 0) {
             setCountCorrect(countCorrect + 1);
         }
-    }
+    }  
 
     return (
         <div>
